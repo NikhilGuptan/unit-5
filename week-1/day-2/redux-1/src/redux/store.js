@@ -1,7 +1,6 @@
 import { createStore } from 'redux'
 
 import { reducer } from './reducer.js'
-import { addCount, addTodo, reduceCount } from './action.js'
 
 const intialState = {
   counter: 0,

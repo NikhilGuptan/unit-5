@@ -1,4 +1,10 @@
-import { ADD_COUNT, REDUCE_COUNT, ADD_TODO } from './actionTypes.js'
+import {
+  ADD_COUNT,
+  REDUCE_COUNT,
+  ADD_TODO,
+  MULTIPLY,
+  DEVIDE,
+} from './actionTypes.js'
 
 export const reducer = (store, { type, payload }) => {
   switch (type) {
@@ -11,6 +17,16 @@ export const reducer = (store, { type, payload }) => {
       return {
         ...store,
         counter: store.counter - payload,
+      }
+    case MULTIPLY:
+      return {
+        ...store,
+        counter: store.counter * payload,
+      }
+    case DEVIDE:
+      return {
+        ...store,
+        counter: store.counter / payload,
       }
     case ADD_TODO:
       return {
