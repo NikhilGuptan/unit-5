@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import "./Todo.css";
 import {
   addTodoError,
   addTodoSucces,
@@ -58,9 +59,14 @@ function Todo() {
       <button onClick={handleAdd}>ADD TODO</button>
       {data.map((e) => {
         return (
-          <Link key={e.id} to={`/${e.id}`}>
-            <div key={e.id}>{e.title}</div>
-          </Link>
+          <div key={e.id}>
+            <Link className="extra" to={`/${e.id}`}>
+              <p>{e.title}</p>
+            </Link>
+            <Link to={`/edit/${e.id}`}>
+              <button>EDIT</button>
+            </Link>
+          </div>
         );
       })}
     </div>

@@ -6,9 +6,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, Redirect, useHistory } from "react-router-dom";
 import { getTodoError, getTodoSucces } from "../redux/action";
 
-function TodoDetail() {
+function Edit() {
+  const [newData, setNewData] = useState("");
   const [data, setData] = useState({});
-  const [toggle, setToggle] = useState(false);
   const { id } = useParams();
   const history = useHistory();
 
@@ -25,33 +25,28 @@ function TodoDetail() {
     }
   };
 
-  const handleToggle = () => {
-    setToggle(!toggle);
-  };
-
-  const handleDelete = async () => {
-    await axios.delete(`http://localhost:3002/todos/${id}`);
-    getTodos();
-    history.replace("/");
-  };
-
-  const handleBack = () => {
+  const handleEdit = async () => {
+    await axios.patch(`http://localhost:3002/todos/${id}`, {
+      status: false,
+      title: newData,
+    });
     history.replace("/");
   };
 
   return (
     <div>
-      <h1 style={{ textDecoration: toggle ? "line-through" : "none" }}>
-        Title : {data.title}
-      </h1>
-      <button onClick={handleToggle}>TOGGLE</button>
-      <button onClick={handleDelete}>DELETE</button>
-      <br />
-      <Link to="/">
-        <button onClick={handleBack}>BACK To HOME</button>
-      </Link>
+      <h1>Title : {data.title}</h1>
+      <input
+        type="text"
+        onChange={(e) => {
+          setNewData(e.target.value);
+        }}
+        value={newData}
+        placeholder="edit todo"
+      />
+      <button onClick={handleEdit}>EDIT NOW</button>
     </div>
   );
 }
 
-export default TodoDetail;
+export default Edit;
