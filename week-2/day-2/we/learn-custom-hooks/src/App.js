@@ -7,8 +7,8 @@ import Counter from './Components/Counter';
 function App() {
   return (
     <div className="App">
-      <Timer/>
-      {/* <Github/> */}
+      {/* <Timer/> */}
+      <Github/>
       {/* <Counter/> */}
     </div>
   );

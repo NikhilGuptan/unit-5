@@ -38,9 +38,9 @@ export const Github=()=>{
         <div>
             {data.map((e,i)=>{
               return(
-                  <div>
+                  <div key={i}>
                       <h3>{e.login}</h3>
-                      <img style={{width:"20%"}} src={e.avatar_url} alt="" />
+                      {/* <img style={{width:"20%"}} src={e.avatar_url} alt="" /> */}
                   </div>
               )
             })}
