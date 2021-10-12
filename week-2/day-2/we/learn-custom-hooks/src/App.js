@@ -1,9 +1,10 @@
 import './App.css';
 
-import {Timer} from "./Components/Timer"
-import {Github} from "./Components/Github"
-import Counter from './Components/Counter';
-import Todo from './Components/UseReducer';
+// import {Timer} from "./Components/Timer"
+// import {Github} from "./Components/Github"
+// import Counter from './Components/Counter';
+// import Todo from './Components/UseReducer';
+import MergeState from './Components/MergeStateHook';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       {/* <Timer/> */}
       {/* <Github/> */}
       {/* <Counter/> */}
-      <Todo/>
+      {/* <Todo/> */}
+      <MergeState/>
     </div>
   );
 }
