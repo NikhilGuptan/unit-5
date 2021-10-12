@@ -3,13 +3,15 @@ import './App.css';
 import {Timer} from "./Components/Timer"
 import {Github} from "./Components/Github"
 import Counter from './Components/Counter';
+import Todo from './Components/UseReducer';
 
 function App() {
   return (
     <div className="App">
       {/* <Timer/> */}
-      <Github/>
+      {/* <Github/> */}
       {/* <Counter/> */}
+      <Todo/>
     </div>
   );
 }
