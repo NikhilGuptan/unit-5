@@ -1,0 +1,43 @@
+
+.inputtext{
+    height: 30px;
+    margin: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+    
+}
+
+.Add{
+    padding: 8px 30px;
+    background-color: rgb(51, 202, 76);
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.verify{
+    padding: 8px 30px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.verify2{
+    padding: 8px 30px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer; 
+    margin-left: 10px;
+
+}
+
+.box{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
