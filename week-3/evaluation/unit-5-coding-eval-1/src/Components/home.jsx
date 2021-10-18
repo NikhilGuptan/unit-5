@@ -60,6 +60,7 @@ function Home() {
       {
       checkLogin ? <div>
           <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"30px"}}>
+              <h2>Movies meetUps</h2>
             {movies.map((e)=>{
                 return(
                     
@@ -68,11 +69,13 @@ function Home() {
                         <p>description : {e.description}</p>
                         <p>Rating : {e.rating}</p>
                         <img style={{width:"200px"}} src={e.image} alt="movie image" />
+                        <Link><Button variant="contained" color="success">Join Event</Button></Link>
                     </div>    
                 ) 
             })}
      </div>
      <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"30px"}}>
+     <h2>Food meetUps</h2>
             {food.map((e)=>{
                 return(
                     
@@ -81,6 +84,7 @@ function Home() {
                         <p>description : {e.description}</p>
                         <p>Rating : {e.rating}</p>
                         <img style={{width:"200px"}} src={e.image} alt="movie image" />
+                        <Link to={`/event/${e.id}`}><Button variant="contained" color="success">Join Event</Button></Link>
                     </div>    
                 ) 
             })}

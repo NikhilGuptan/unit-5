@@ -5,7 +5,7 @@ export const Context = createContext({})
 
 function ContextProvider({children}){
 
-    const [checkLogin,setCheckLogin] = useState(false)
+    const [checkLogin,setCheckLogin] = useState(true)
 
     const handlecheckLogin=()=>{
         setCheckLogin(!checkLogin)

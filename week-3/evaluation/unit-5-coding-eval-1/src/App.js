@@ -2,6 +2,7 @@
 import Home from "./Components/home";
 import {Route,Switch} from "react-router-dom"
 import Login from "./Components/Login";
+import EventDetaail from "./Components/EventDetail";
 
 function App() {
   return (
@@ -10,8 +11,11 @@ function App() {
         <Route exact path="/">
           <Home/>
         </Route>
-        <Route>
+        <Route exact path="/login">
           <Login/>
+        </Route>
+        <Route exact path="/event/:id">
+          <EventDetaail/>
         </Route>
         <Route>
           404 not found
