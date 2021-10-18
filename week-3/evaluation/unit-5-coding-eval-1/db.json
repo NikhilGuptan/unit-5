@@ -1,9 +1,16 @@
 {
-  "posts": [
+  "food": [
     {
       "id": 1,
       "title": "json-server",
       "author": "typicode"
     }
-  ]
+  ],
+  "movies":[
+
+  ],
+  "art":[
+
+  ],
+  "userDetail":[]
 }

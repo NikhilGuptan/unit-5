@@ -1,12 +1,20 @@
 import "./home.css";
 import Button from "@mui/material/Button";
+import {Link,useHistory} from "react-router-dom"
 
 function Home() {
+
+    const history = useHistory()
+
+    const handleLogin=()=>{
+        history.push("/login")
+    }
+
   return (
     <div>
       <nav className="Homenav">
         <h1>MeetUp</h1>
-        <Button variant="contained">LogIn</Button>
+        <Button onClick={handleLogin} variant="contained">LogIn</Button>
         <Button variant="contained">signUp</Button>
       </nav>
       <div className="text">
