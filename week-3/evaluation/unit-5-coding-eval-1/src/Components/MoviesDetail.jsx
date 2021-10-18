@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 import {useParams} from "react-router-dom"
 
-function EventDetaail(){
+function MoviesDetail(){
 
     const [data,setData] = useState({})
 
@@ -15,7 +15,7 @@ function EventDetaail(){
     },[])
 
     async function getData(){
-        await axios.get(`http://localhost:3002/food/${id}`)
+        await axios.get(`http://localhost:3002/movies/${id}`)
         .then((e)=>{
             console.log(e.data);
             setData(e.data)
@@ -32,4 +32,4 @@ function EventDetaail(){
     )
 }
 
-export default EventDetaail;
+export default MoviesDetail;

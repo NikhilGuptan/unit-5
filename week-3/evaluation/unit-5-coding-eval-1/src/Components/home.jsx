@@ -69,7 +69,7 @@ function Home() {
                         <p>description : {e.description}</p>
                         <p>Rating : {e.rating}</p>
                         <img style={{width:"200px"}} src={e.image} alt="movie image" />
-                        <Link><Button variant="contained" color="success">Join Event</Button></Link>
+                        <Link to={`/movies/${e.id}`}><Button variant="contained" color="success">Join Event</Button></Link>
                     </div>    
                 ) 
             })}
@@ -84,7 +84,7 @@ function Home() {
                         <p>description : {e.description}</p>
                         <p>Rating : {e.rating}</p>
                         <img style={{width:"200px"}} src={e.image} alt="movie image" />
-                        <Link to={`/event/${e.id}`}><Button variant="contained" color="success">Join Event</Button></Link>
+                        <Link to={`/food/${e.id}`}><Button variant="contained" color="success">Join Event</Button></Link>
                     </div>    
                 ) 
             })}
