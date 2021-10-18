@@ -1,16 +1,25 @@
 import Button from "@mui/material/Button";
 import TextField from '@mui/material/TextField';
+import axios from "axios";
 import { useState } from "react";
 import "./home.css"
+import {useHistory} from "react-router-dom"
 
 function Login(){
+
+    const history = useHistory()
 
     const [name,setName] = useState("")
     const [age,setAge] = useState("")
     const [interst,setInterset] = useState("")
 
-    const handleSubmit=()=>{
-        console.log(name,age,interst);
+    const handleSubmit= async ()  =>{
+        await axios.post("http://localhost:3002/userDetail",{
+            name,
+            age,
+            interst
+        })
+        history.replace("/")
     }
 
     return(
