@@ -1,13 +1,15 @@
 import Button from "@mui/material/Button";
 import TextField from '@mui/material/TextField';
 import axios from "axios";
-import { useState } from "react";
+import { useState,useContext } from "react";
 import "./home.css"
+import {Context} from "../Context/Contect"
 import {useHistory} from "react-router-dom"
 
 function Login(){
 
     const history = useHistory()
+    const {checkLogin,handlecheckLogin} = useContext(Context)
 
     const [name,setName] = useState("")
     const [age,setAge] = useState("")
@@ -19,6 +21,7 @@ function Login(){
             age,
             interst
         })
+        handlecheckLogin()
         history.replace("/")
     }
 

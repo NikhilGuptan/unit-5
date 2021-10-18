@@ -1,38 +1,42 @@
 {
   "food": [
     {
-      "title":"Panner Recipe",
-      "description":"in this we make panner recipes",
-      "image":"https://www.vegrecipesofindia.com/wp-content/uploads/2021/03/tawa-paneer-2.jpg",
-      "rating":"4"
-    },{
-      "title":"Dal Recipe",
-      "description":"in this we make dal recipes",
-      "image":"https://www.thedeliciouscrescent.com/wp-content/uploads/2020/01/Dal-Recipe-Square.jpg",
-      "rating":"5"
-    },{
-      "title":"Chicken Recipe",
-      "description":"in this we make Chicken recipes",
-      "image":"https://famousdishes.in/wp-content/uploads/2020/06/1-11.jpg",
-      "rating":"4"
+      "title": "Panner Recipe",
+      "description": "in this we make panner recipes",
+      "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/03/tawa-paneer-2.jpg",
+      "rating": "4"
+    },
+    {
+      "title": "Dal Recipe",
+      "description": "in this we make dal recipes",
+      "image": "https://www.thedeliciouscrescent.com/wp-content/uploads/2020/01/Dal-Recipe-Square.jpg",
+      "rating": "5"
+    },
+    {
+      "title": "Chicken Recipe",
+      "description": "in this we make Chicken recipes",
+      "image": "https://famousdishes.in/wp-content/uploads/2020/06/1-11.jpg",
+      "rating": "4"
     }
   ],
   "movies": [
     {
-      "title":"Avenger",
-      "description":"I  this event we discuss anout avenger",
-      "image":"https://terrigen-cdn-dev.marvel.com/content/prod/1x/theavengers_lob_crd_03.jpg",
-      "rating":"4"
-    },{
-      "title":"Inception",
-      "description":"in this event we discuss Inceptio movie idology",
-      "image":"https://flxt.tmsimg.com/assets/p7825626_p_v10_af.jpg",
-      "rating":"6"
-    },{
-      "title":"the dark knight",
-      "description":"In this event we discuss dart knight secrets",
-      "image":"https://images.saymedia-content.com/.image/t_share/MTc0Mzk0MTExMDQ5MDgyMjE2/should-i-watch-the-dark-knight.jpg",
-      "rating":"8"
+      "title": "Avenger",
+      "description": "I  this event we discuss anout avenger",
+      "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/theavengers_lob_crd_03.jpg",
+      "rating": "4"
+    },
+    {
+      "title": "Inception",
+      "description": "in this event we discuss Inceptio movie idology",
+      "image": "https://flxt.tmsimg.com/assets/p7825626_p_v10_af.jpg",
+      "rating": "6"
+    },
+    {
+      "title": "the dark knight",
+      "description": "In this event we discuss dart knight secrets",
+      "image": "https://images.saymedia-content.com/.image/t_share/MTc0Mzk0MTExMDQ5MDgyMjE2/should-i-watch-the-dark-knight.jpg",
+      "rating": "8"
     }
   ],
   "art": [],
@@ -42,6 +46,12 @@
       "age": "12",
       "interst": "movies",
       "id": 1
+    },
+    {
+      "name": "nikhil",
+      "age": "232",
+      "interst": "gaming",
+      "id": 2
     }
   ]
 }

@@ -38,12 +38,16 @@ function Home() {
         })
     }
 
+    const handleSignOut=()=>{
+        handlecheckLogin()
+    }
+
   return (
     <div>
       <nav className="Homenav">
         <h1>MeetUp</h1>
         {checkLogin ? <img style={{width:"80px",borderRadius:"50%"}} src="https://static.toiimg.com/thumb/resizemode-4,msid-76729750,imgsize-249247,width-720/76729750.jpg" alt="" /> : <Button onClick={handleLogin} variant="contained">LogIn</Button>}
-        <Button variant="contained">signUp</Button>
+        <Button onClick={handleSignOut} variant="contained">signOut</Button>
       </nav>
       <div className="text">
       <h1>Dive in! There are so many things to do on Meetup</h1>
