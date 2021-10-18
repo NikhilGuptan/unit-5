@@ -1,10 +1,10 @@
 
-import './App.css';
+import Home from "./Components/home";
 
 function App() {
   return (
-    <div className="App">
-      evaluation 1
+    <div>
+      <Home/>
     </div>
   );
 }
